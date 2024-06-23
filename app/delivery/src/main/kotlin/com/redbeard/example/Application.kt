@@ -1,4 +1,4 @@
-package com.redbeard.alerting
+package com.redbeard.example
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

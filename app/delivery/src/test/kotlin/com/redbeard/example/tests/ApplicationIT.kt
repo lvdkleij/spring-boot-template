@@ -1,6 +1,6 @@
-package com.redbeard.alerting.tests
+package com.redbeard.example.tests
 
-import com.redbeard.alerting.BaseIT
+import com.redbeard.example.BaseIT
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.web.servlet.MockMvc
