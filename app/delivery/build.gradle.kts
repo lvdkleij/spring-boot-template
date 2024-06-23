@@ -1,3 +1,5 @@
 dependencies {
-    implementation(libs.springBootStarterWeb)
-}
+        implementation(libs.springBootStarterWeb)
+
+        testImplementation(libs.springBootStarterTest)
+    }

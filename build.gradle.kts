@@ -10,4 +10,12 @@ subprojects {
     repositories {
         mavenCentral()
     }
+
+    dependencies {
+        testImplementation(rootProject.libs.kotestAssertionsCore)
+    }
+
+    tasks.withType<Test>().configureEach {
+        useJUnitPlatform()
+    }
 }
