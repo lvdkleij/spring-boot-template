@@ -17,7 +17,6 @@ allprojects {
 
         kotlinGradle {
             target("**/*.gradle.kts")
-
             ktlint()
         }
     }
