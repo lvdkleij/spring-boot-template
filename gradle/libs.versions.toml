@@ -16,3 +16,4 @@ restAssured = { group = "io.rest-assured", name = "rest-assured", version.ref = 
 
 [plugins]
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version libs.versions.kotlin.get() apply false
+    alias(libs.plugins.kotlinJvm) apply false
     alias(libs.plugins.spotless)
     java
 }
@@ -8,12 +8,16 @@ allprojects {
     apply(plugin = rootProject.libs.plugins.spotless.get().pluginId)
 
     spotless {
+        ratchetFrom("origin/main")
+
         kotlin {
             target("**/*.kt")
             ktlint()
         }
+
         kotlinGradle {
             target("**/*.gradle.kts")
+            
             ktlint()
         }
     }
@@ -21,7 +25,7 @@ allprojects {
 
 subprojects {
     apply(plugin = "java")
-    apply(plugin = "org.jetbrains.kotlin.jvm")
+    apply(plugin =  rootProject.libs.plugins.kotlinJvm.get().pluginId)
 
     repositories {
         mavenCentral()
