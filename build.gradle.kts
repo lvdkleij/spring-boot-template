@@ -25,7 +25,7 @@ allprojects {
 
 subprojects {
     apply(plugin = "java")
-    apply(plugin =  rootProject.libs.plugins.kotlinJvm.get().pluginId)
+    apply(plugin = rootProject.libs.plugins.kotlinJvm.get().pluginId)
 
     repositories {
         mavenCentral()
