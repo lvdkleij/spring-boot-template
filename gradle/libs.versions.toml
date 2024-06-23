@@ -3,6 +3,8 @@ kotlin = "2.0.0"
 springBoot = "3.3.1"
 kotest = "5.9.1"
 restAssured = "5.4.0"
+spotless = "5.14.2"
+ktfmt = "0.51"
 
 [libraries]
 springBootStarterWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBoot" }
@@ -12,4 +14,5 @@ springBootStarterTest = { group = "org.springframework.boot", name = "spring-boo
 kotestAssertionsCore = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
 restAssured = { group = "io.rest-assured", name = "rest-assured", version.ref = "restAssured" }
 
-
+[plugins]
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
