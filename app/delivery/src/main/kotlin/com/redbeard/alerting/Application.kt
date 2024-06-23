@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class AlertingApplication
+open class Application
 
 fun main(args: Array<String>) {
-	runApplication<AlertingApplication>(*args)
+	runApplication<Application>(*args)
 }

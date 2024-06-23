@@ -1,0 +1,6 @@
+[versions]
+kotlin = "2.0.0"
+springBoot = "3.3.1"
+
+[libraries]
+springBootStarterWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBoot" }
