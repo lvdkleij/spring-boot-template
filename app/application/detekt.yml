@@ -1,0 +1,6 @@
+style:
+  ForbiddenImport:
+    active: true
+    imports:
+      - com.redbeard.example.presentation.*
+      - com.redbeard.example.delivery.*

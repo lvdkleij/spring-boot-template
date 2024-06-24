@@ -1,6 +1,6 @@
-package com.redbeard.example.tests
+package com.redbeard.example.application.tests
 
-import com.redbeard.example.BaseIT
+import com.redbeard.example.application.BaseIT
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.test.web.servlet.MockMvc

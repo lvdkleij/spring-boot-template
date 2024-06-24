@@ -7,16 +7,18 @@ plugins {
 allprojects {
     apply(plugin = rootProject.libs.plugins.spotless.get().pluginId)
 
+    repositories {
+        mavenCentral()
+    }
+
     spotless {
         ratchetFrom("origin/main")
 
         kotlin {
-            target("**/*.kt")
             ktlint()
         }
 
         kotlinGradle {
-            target("**/*.gradle.kts")
             ktlint()
         }
     }
@@ -25,10 +27,6 @@ allprojects {
 subprojects {
     apply(plugin = "java")
     apply(plugin = rootProject.libs.plugins.kotlinJvm.get().pluginId)
-
-    repositories {
-        mavenCentral()
-    }
 
     dependencies {
         testImplementation(rootProject.libs.kotestAssertionsCore)

@@ -1,0 +1,5 @@
+style:
+  ForbiddenImport:
+    active: true
+    imports:
+      - org.springfraework.boot.runApplication

@@ -5,6 +5,7 @@ kotest = "5.9.1"
 restAssured = "5.4.0"
 spotless = "5.14.2"
 ktfmt = "0.51"
+detekt = "1.23.6"
 
 [libraries]
 springBootStarterWeb = { group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref = "springBoot" }
@@ -17,3 +18,4 @@ restAssured = { group = "io.rest-assured", name = "rest-assured", version.ref = 
 [plugins]
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
